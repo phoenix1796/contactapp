@@ -1,7 +1,8 @@
 var express = require('express');
 var app = express();
 var mongojs = require('mongojs');
-var db = mongojs('contactlist',['contactlist']);
+var db = mongojs('mongodb://admin:ganeshji123@ds047592.mongolab.com:47592/contactlist',['contactlist']);
+//var db = mongojs('contactlist',['contactlist']);
 var bodyParser = require('body-parser');
 
 app.use(express.static(__dirname + "/public"));
@@ -42,7 +43,7 @@ app.put('/contactlist/:id',function(req,res) {
 		new: true},function(err,doc) {
 		res.json(doc);
 	});
-});
+});	
 
 app.listen(3000);
 console.log("Server running on port 3000");

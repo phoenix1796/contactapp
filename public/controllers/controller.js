@@ -35,6 +35,13 @@ myApp.controller('AppCtrl',['$scope','$http',function($scope,$http) {
     		});
     	};
 
+      $scope.find = function() {
+        console.log("Searching ...");
+        $http.get('/find/' + $scope.contact.name,$scope.contact).success(function(response) {
+          $scope.contactlist = response;
+        });
+      };
+
     	$scope.deselect = function() {
     		$scope.contact = "";
     	};

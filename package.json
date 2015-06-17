@@ -1,0 +1,36 @@
+{
+  "name": "contactlistapp",
+  "version": "1.0.0",
+  "description": "An application to store contact details (uses MEAN stack)",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.12.4",
+    "mongojs": "^1.0.0",
+    "express": "^4.12.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phoenix1796/contactapp.git"
+  },
+  "keywords": [
+    "contact",
+    "contactlist",
+    "contact",
+    "details"
+  ],
+  "author": "RED.phoenix",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/phoenix1796/contactapp/issues"
+  },
+  "homepage": "https://github.com/phoenix1796/contactapp#readme",
+	"engines": {
+	    "node": "0.12.x",
+	    "npm": "2.10.1"
+	  }
+}
